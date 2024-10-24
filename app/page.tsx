@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <HeroHighlight className='min-h-screen w-screen p-6'>
-      <div className='font-bold text-3xl md:text-5xl text-center w-full mb-4 pt-20'>
+      <div className='font-bold text-3xl md:text-5xl text-center w-full mb-4 pt-60'>
         Computer Society of India
       </div>
       <div className='text-center font-semibold text-lg md:text-xl w-full'>
@@ -68,9 +68,9 @@ export default function Home() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className='text-xl md:text-1xl px-4 font-bold text-neutral-700 dark:text-white text-center mx-auto mb-6 pt-40 pb-80 overflow-hidden max-w-5xl '>
+        className='text-xl md:text-1xl px-4 font-bold text-neutral-700 dark:text-white text-center mx-auto mb-6 pt-20 pb-60 overflow-hidden max-w-5xl '>
         Are you eager to transform your ideas into reality and carve a path
-        toward a brighter future? The CSI Student Chapter at VIT Bhopal
+        toward a brighter future? <br /> The CSI Student Chapter at VIT Bhopal
         University is looking for enthusiastic, driven individuals to join our
         dynamic teams. <br /> <br />
         <Highlight className='text-black dark:text-white md:text-3xl'>
