@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { div } from "framer-motion/client";
 
 export function LampDemo() {
   return (
