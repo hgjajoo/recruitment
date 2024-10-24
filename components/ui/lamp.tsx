@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { div } from "framer-motion/client";
 
 export function LampDemo() {
   return (
@@ -14,10 +15,13 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className='mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl text-[#13bdda]'>
+        className='mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-6xl text-[#13bdda]'>
         Computer Society of India <br />
         <span className='text-2xl md:text-5xl text-slate-400'>
-          VIT Bhopal Chapter
+          VIT Bhopal Chapter <br />
+          <div className="text-3xl md:text-6xl pt-20">
+          Recruitment Drive
+          </div>
         </span>
       </motion.h1>
     </LampContainer>
