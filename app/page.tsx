@@ -2,6 +2,7 @@
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { FocusCards } from "@/components/ui/focus-cards";
 import { motion } from "framer-motion";
+import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   const cards = [
@@ -48,38 +49,92 @@ export default function Home() {
   ];
 
   return (
-    <HeroHighlight className='min-h-screen w-screen p-6'>
-      <div className='font-bold text-3xl md:text-5xl text-center w-full mb-4 pt-60'>
-        Computer Society of India
-      </div>
-      <div className='text-center font-semibold text-lg md:text-xl w-full'>
-        VIT Bhopal Student Chapter
-      </div>
-      <motion.h1
-        initial={{
-          opacity: 0,
-          y: 20,
-        }}
-        animate={{
-          opacity: 1,
-          y: [20, -5, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: [0.4, 0.0, 0.2, 1],
-        }}
-        className='text-xl md:text-1xl px-4 font-bold text-neutral-700 dark:text-white text-center mx-auto mb-6 pt-20 pb-60 overflow-hidden max-w-5xl '>
-        Are you eager to transform your ideas into reality and carve a path
-        toward a brighter future? <br /> The CSI Student Chapter at VIT Bhopal
-        University is looking for enthusiastic, driven individuals to join our
-        dynamic teams. <br /> <br />
-        <Highlight className='text-black dark:text-white md:text-3xl'>
-          Our mission: Create. Innovate. Transform.
-        </Highlight>
-      </motion.h1>
-      <div className='pb-24'>
-        <FocusCards cards={cards} />
-      </div>
-    </HeroHighlight>
+    <>
+      <HeroHighlight className="min-h-screen w-screen p-6">
+      <img
+  src="https://i.imgur.com/9hV9cRw.png"
+  className="absolute top-8 left-8 md:w-[75px] md:h-[75px] object-cover w-[50px] h-[50px]" // csi
+/>
+<img
+  src="https://i.imgur.com/L4IHIcw.png"
+  className="absolute top-8 right-8 md:w-[140px] md:h-[75px] object-cover w-[90px] h-[50px]" // vitb
+/>
+
+
+        <div className="font-bold text-3xl md:text-5xl text-center w-full mb-4 pt-60">
+          Computer Society of India
+        </div>
+        <div className="text-center font-semibold text-lg md:text-xl w-full">
+          Student Chapter
+        </div>
+        <div className="text-center font-semibold text-lg md:text-xl w-full">
+          VIT Bhopal
+        </div>
+        <motion.h1
+          initial={{
+            opacity: 0,
+            y: 20,
+          }}
+          animate={{
+            opacity: 1,
+            y: [20, -5, 0],
+          }}
+          transition={{
+            duration: 0.5,
+            ease: [0.4, 0.0, 0.2, 1],
+          }}
+          className="text-xl md:text-1xl px-4 font-bold text-neutral-700 dark:text-white text-center mx-auto mb-6 pt-20 pb-60 overflow-hidden max-w-5xl "
+        >
+          Are you eager to transform your ideas into reality and carve a path
+          toward a brighter future? <br /> The CSI Student Chapter at VIT Bhopal
+          University is looking for enthusiastic, driven individuals to join our
+          dynamic teams. <br /> <br />
+          <Highlight className="text-black dark:text-white md:text-3xl pr-4 pl-4">
+            Our mission: Create. Innovate. Transform.
+          </Highlight>
+        </motion.h1>
+        <div className="pb-40">
+          <FocusCards cards={cards} />
+        </div>
+        <footer className=" backdrop-blur-sm text-white pt-10">
+          <div className="container mx-auto text-center">
+            <div className="flex justify-center space-x-4 mb-4">
+              <a
+                href="mailto:csi@vitbhopal.ac.in"
+                className="hover:text-gray-300"
+              >
+                <FaEnvelope size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/csi.vitb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300"
+              >
+                <FaInstagram size={24} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/csivitbhopal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300"
+              >
+                <FaLinkedin size={24} />
+              </a>
+            </div>
+            <p className="mb-4">Contact us: csi@vitbhopal.ac.in</p>
+            <div className="font-bold text-lg">Faculty Coordinator:</div>
+            <div className="mt-2 pb-5">
+              <p>Dr. K Murugeswari</p>
+            </div>
+            <div className="font-bold text-lg">Student Coordinators:</div>
+            <div className="mt-2 pb-5">
+              <p>Pratham Goyal - +91 82934 65263</p>
+              <p>Spandan Kumar Sahoo - +91 76090 24708</p>
+            </div>
+          </div>
+        </footer>
+      </HeroHighlight>
+    </>
   );
 }
