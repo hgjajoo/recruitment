@@ -17,7 +17,7 @@ export default function Home() {
       link: "https://forms.gle/EgxTDrraqUtBgbTA6",
     },
     {
-      title: "PR Team",
+      title: "Corporate Outreach Team",
       src: "https://images.unsplash.com/photo-1663162550928-2c2389cdb27d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "https://forms.gle/FVe9pmyXoPCUcmiQ7",
     },
@@ -27,7 +27,7 @@ export default function Home() {
       link: "https://forms.gle/e3SpJoPxhcYVBLAV6",
     },
     {
-      title: "Social Team",
+      title: "Social Media Team",
       src: "https://images.unsplash.com/photo-1513118172236-00b7cc57e1fa?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "https://forms.gle/Zg3GusLS3dwoB8HH6",
     },
@@ -56,16 +56,13 @@ export default function Home() {
   className="absolute top-8 left-8 md:w-[75px] md:h-[75px] object-cover w-[50px] h-[50px]" // csi
 />
 <img
-  src="https://i.imgur.com/L4IHIcw.png"
-  className="absolute top-8 right-8 md:w-[140px] md:h-[75px] object-cover w-[90px] h-[50px]" // vitb
+  src="https://i.imgur.com/1fIFbIu.png"
+  className="absolute top-8 right-8 md:w-[175px] md:h-[75px] object-cover w-[120px] h-[50px]" // vitb
 />
 
 
         <div className="font-bold text-3xl md:text-5xl text-center w-full mb-4 pt-60">
-          Computer Society of India
-        </div>
-        <div className="text-center font-semibold text-lg md:text-xl w-full">
-          Student Chapter
+          CSI Student Chapter
         </div>
         <div className="text-center font-semibold text-lg md:text-xl w-full">
           VIT Bhopal
@@ -96,7 +93,7 @@ export default function Home() {
         <div className="pb-40">
           <FocusCards cards={cards} />
         </div>
-        <footer className=" backdrop-blur-sm text-white pt-10">
+        <footer className=" bg-opacity-60 bg-black text-white pt-10">
           <div className="container mx-auto text-center">
             <div className="flex justify-center space-x-4 mb-4">
               <a
