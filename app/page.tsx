@@ -93,7 +93,7 @@ export default function Home() {
         <div className="pb-40">
           <FocusCards cards={cards} />
         </div>
-        <footer className=" bg-opacity-60 bg-black text-white pt-10">
+        <footer className=" bg-opacity-60 dark:bg-black dark:text-white bg-white text-black pt-10">
           <div className="container mx-auto text-center">
             <div className="flex justify-center space-x-4 mb-4">
               <a
